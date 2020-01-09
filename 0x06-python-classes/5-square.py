@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 class Square:
+	"""Function
+	"""
     def __init__(self, size=0):
         """Method
 		"""
