@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 class Square:
-    """ A class that defines a square by its size
+    """ Defines a square by size
     """
     def __init__(self, size=0):
-        """ Method to initialize the square object
+        """ Initialize the square
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -13,19 +13,19 @@ class Square:
             self.__size = size
 
     def area(self):
-        """ Method that returns the square are of the object
+        """ Return the square
         """
         return (self.__size ** 2)
 
     @property
     def size(self):
-        """ Method to returns the size value
+        """ Returns the size value
         """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ Method to set the size value of the square object
+        """ Set the size value
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -35,13 +35,12 @@ class Square:
             self.__size = value
 
     def my_print(self):
-        """ Method that prints a # square according
-        to the size value
+        """ print square
         """
         if not self.__size:
             print()
         else:
-            for i in range(self.__size):
-                for j in range(self.__size):
+            for x in range(self.__size):
+                for y in range(self.__size):
                     print("#", end='')
                 print()
