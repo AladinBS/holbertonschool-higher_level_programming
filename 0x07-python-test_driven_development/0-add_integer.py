@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-File containing the add integer method.
-a is the first integer
-b is the second integer
+Adding numbers
 """
 def add_integer(a, b=98):
-    """ 'add_integer(a, b)' function that adds two integers/floats
-        a is the first integer
-        b is the second integer """
-    if type(a) is not int and type(a) is not float:
+	""" 'add_integer(a, b)' allows to add an int and a float
+        a
+        b"""
+    if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
-    if type(b) is not int and type(b) is not float:
+    if not isinstance(b, int) and not isinstance(b, float):
         raise TypeError("b must be an integer")
-    return(int(a + b))
+    	b = int(b)
+	a = int(a)
+    return (a + b)
